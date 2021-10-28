@@ -46,7 +46,7 @@
         <!-- SpringBoot 核心包 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
 
         <!-- SpringBoot 测试 -->

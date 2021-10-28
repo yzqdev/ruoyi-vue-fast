@@ -1,5 +1,6 @@
 package com.ruoyi.framework.security;
 
+import java.io.Serial;
 import java.util.Collection;
 import java.util.Set;
 import org.springframework.security.core.GrantedAuthority;
@@ -14,6 +15,7 @@ import com.ruoyi.project.system.domain.SysUser;
  */
 public class LoginUser implements UserDetails
 {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**
