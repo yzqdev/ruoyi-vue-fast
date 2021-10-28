@@ -17,7 +17,7 @@ export default {
       const isLogin = await this.blobValidate(res.data);
       if (isLogin) {
         const blob = new Blob([res.data])
-        this.saveAs(blob, decodeURI(res.headers['download-filename']))
+        this.saveAs(blob,  res.headers['download-filename']  )
       } else {
         Message.error('无效的会话，或者会话已过期，请重新登录。');
       }
@@ -34,7 +34,7 @@ export default {
       const isLogin = await this.blobValidate(res.data);
       if (isLogin) {
         const blob = new Blob([res.data])
-        this.saveAs(blob, decodeURI(res.headers['download-filename']))
+        this.saveAs(blob,  res.headers['download-filename'] )
       } else {
         Message.error('无效的会话，或者会话已过期，请重新登录。');
       }
